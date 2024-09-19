@@ -43,3 +43,40 @@ https://github.com/oliveroliverio/CF_1_Pokedex2
 # Live link
 https://oliveroliverio.github.io/CF_1_Pokedex2/
 
+# Linting
+Please refer to file `eslint.config.mjs`
+
+# Technologies used
+- **HTML**: For structuring the content of the web pages.
+- **CSS**: For styling the web pages.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **JavaScript**: For adding interactivity and fetching data from the API.
+- **Bootstrap**: For additional styling and layout components.
+- **ESLint**: For linting JavaScript code to ensure code quality and consistency.
+- **Git**: For version control.
+- **GitHub**: For hosting the repository and live site.
+- **Pokémon API**: For fetching Pokémon data.
+## User Flows
+
+### User Flow 1: Viewing Pokémon Gallery
+1. **Landing Page**: User lands on the homepage.
+2. **Gallery Display**: User sees a grid of Pokémon cards.
+3. **Card Interaction**: User can hover over a card to see a shadow effect.
+4. **Details Modal**: User clicks on a card to open a modal with detailed information about the Pokémon.
+
+### User Flow 2: Searching for Pokémon
+1. **Search Bar**: User types a Pokémon name or trait in the search bar.
+2. **Search Button**: User clicks the search button.
+3. **Search Results**: A modal pops up displaying the search results or a message if no results are found.
+
+## User Stories
+
+### User Story 1: Viewing Pokémon Gallery
+- **As a** Pokémon enthusiast,
+- **I want** to view a gallery of Pokémon,
+- **So that** I can explore different Pokémon and learn more about them.
+
+### User Story 2: Searching for Pokémon
+- **As a** user,
+- **I want** to search for Pokémon by name or trait,
+- **So that** I can quickly find specific Pokémon that interest me.
