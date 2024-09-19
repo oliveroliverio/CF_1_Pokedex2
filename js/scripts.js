@@ -33,6 +33,18 @@ let pokemonRepository = (function () {
 		if (button && listItem && pokemonUl) {
 			loadDetails(pokemon)
 				.then(function () {
+					// Create a container for the grid
+					const container = document.createElement('div')
+					container.classList.add('container')
+
+					// Create a row for the grid
+					const row = document.createElement('div')
+					row.classList.add('row')
+
+					// Create a column for the card
+					const col = document.createElement('div')
+					col.classList.add('col')
+
 					// set cardTitle to pokemon.name
 					cardTitle.innerText = pokemon.name
 					// set cardText to pokemon.height
@@ -49,15 +61,21 @@ let pokemonRepository = (function () {
 					cardBody.appendChild(img)
 					// append cardBody to card
 					card.appendChild(cardBody)
-					// append card to listItem
-					listItem.appendChild(card)
+					// append card to column
+					col.appendChild(card)
+					// append column to row
+					row.appendChild(col)
+					// append row to container
+					container.appendChild(row)
+					// append container to listItem
+					listItem.appendChild(container)
 
 					// set innerText of button to pokemon
 					button.innerText = 'Details'
 					// add custom class to button
 					button.classList.add('btn', 'btn-primary', 'mb-2')
 					// append the button to listItem
-					listItem.appendChild(button)
+					cardBody.appendChild(button)
 					// append the list item to the ul element
 					pokemonUl.appendChild(listItem)
 					// add event listener to button that displays details in modal
@@ -83,6 +101,11 @@ let pokemonRepository = (function () {
 			<p>Height: ${pokemon.height}</p>
 			<p>Types: ${pokemon.types.map((typeInfo) => typeInfo.type.name).join(', ')}</p>
 		`
+		// add image above modalTitle
+		const img = document.createElement('img')
+		img.src = imageUrl + pokemon.id + '.png?raw=true'
+		img.classList.add('img-fluid', 'mb-2')
+		modalBody.insertBefore(img, modalBody.firstChild)
 
 		// Show the modal
 		$('#pokemonModal').modal('show')
