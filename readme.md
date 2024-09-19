@@ -36,3 +36,10 @@ Several things learned from this project include:
 - **User Experience**: Focusing on creating a user-friendly interface that is both visually appealing and functional was a significant learning point. Ensuring that users can easily search for and filter Pokémon based on various traits added value to the application.
 
 These lessons have provided valuable insights and skills that can be applied to future projects, enhancing both development efficiency and the quality of the final product.
+
+# Link to repo
+https://github.com/oliveroliverio/CF_1_Pokedex2
+
+# Live link
+https://oliveroliverio.github.io/CF_1_Pokedex2/
+
